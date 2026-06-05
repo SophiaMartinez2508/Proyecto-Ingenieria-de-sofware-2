@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-lavender-blush: #fff0f3;
+  --color-night-bordeaux: #590d22;
+  --color-cherry-rose: #a4133c;
+  --color-pastel-pink: #ffccd5;
+}
+
+/* Custom continuous animations & styles */
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.95; }
+}
+
+.pulsate-subtle {
+  animation: soft-pulse 3s infinite ease-in-out;
+}
